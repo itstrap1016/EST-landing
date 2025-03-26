@@ -169,7 +169,7 @@ main .section-01 .text-container h2 {
 }
 main .section-02 {
   max-width: 1280px;
-  margin: 0 auto 196px;
+  margin: 0 auto 208px;
 }
 main .section-02 > h2 {
   color: var(--peach);
@@ -229,7 +229,7 @@ main .section-03 .subscribe {
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: -94px;
+  top: -106px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -288,11 +288,11 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-footer ul {
+footer .sns-list {
   display: flex;
   gap: 20px;
 }
-footer ul li a {
+footer .sns-list li a {
   display: flex;
   width: 42px;
   height: 42px;
@@ -300,6 +300,9 @@ footer ul li a {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+}
+footer .menu-list {
+  display: none;
 }
 
 /* dialog */
@@ -334,9 +337,16 @@ footer ul li a {
 .pop-up p:nth-child(3) {
   font-size: 14px;
   margin-bottom: 38px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1279px) {
+  /* 공통 영역 */
+  .primary-btn {
+    padding: 11px 24px;
+    font-size: 14px;
+  }
+
   /* header */
   header nav {
     padding: 24px 20px;
@@ -425,5 +435,138 @@ footer ul li a {
   main .section-01 .text-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+  main .section-02 {
+    margin-bottom: 188px;
+  }
+  main .section-02 > h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  main .section-02 > p {
+    width: calc(100% - 64px);
+    margin-bottom: 40px;
+  }
+  main .section-02 .img-list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  main .section-02 .img-list li {
+    width: 260px;
+    height: 260px;
+  }
+  main .section-02 .learn-more-container {
+    flex-direction: column;
+    align-items: start;
+    max-width: 800px;
+    width: calc(100% - 64px);
+    gap: 30px;
+  }
+  main .section-02 .learn-more-container .primary-btn {
+    align-self: flex-end;
+  }
+  main .section-03 .subscribe {
+    width: calc(100% - 32px);
+    flex-direction: column;
+    max-width: 800px;
+    padding: 36px 32px 30px 32px;
+    gap: 30px;
+  }
+  main .section-03 .subscribe .text-container {
+    width: 100%;
+  }
+  main .section-03 .subscribe .text-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  main .section-03 .subscribe .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+  }
+  main .section-03 .subscribe .input-container .mail-icon {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 16px;
+  }
+  main .section-03 .subscribe .input-container .primary-btn {
+    position: static;
+    width: 117px;
+    align-self: flex-end;
+  }
+  main .section-03 .subscribe .input-container input {
+    height: 40px;
+    width: 100%;
+    padding: 0 48px;
+    font-size: 12px;
+  }
+  main .section-03 .subscribe .input-container input::placeholder {
+    font-size: 12px;
+  }
+  main .section-03 .bg {
+    height: 240px;
+  }
+
+  /* footer */
+  footer {
+    padding: 30px 20px 28px;
+    align-items: flex-start;
+    position: relative;
+  }
+  footer > a {
+    width: 112px;
+    height: 30px;
+  }
+  footer > a img {
+    width: 100%;
+    height: 100%;
+  }
+  footer .menu-list {
+    display: initial;
+  }
+  footer .menu-list li {
+    text-align: right;
+    margin-bottom: 16px;
+  }
+  footer .menu-list li:last-child {
+    margin-bottom: 0;
+  }
+  footer .menu-list li a {
+    font-size: 14px;
+    color: #767676;
+  }
+  footer .sns-list {
+    position: absolute;
+    left: 20px;
+    bottom: 24px;
+    gap: 16px;
+  }
+  footer .sns-list li a {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* pop-up */
+  .pop-up {
+    width: 300px;
+    padding: 40px 0 30px;
+    height: auto;
+  }
+  .pop-up .hodu {
+    width: 60px;
+    height: 62px;
+  }
+  .pop-up p:nth-child(2) {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .pop-up p:nth-child(3) {
+    width: 200px;
+    margin-bottom: 28px;
   }
 }
