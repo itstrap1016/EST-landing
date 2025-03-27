@@ -25,6 +25,10 @@
   font-weight: 700;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body * {
   font-family: "Spoqa";
   box-sizing: border-box;
@@ -452,6 +456,7 @@ footer .menu-list {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+    padding: 0 32px;
   }
   main .section-02 .img-list li {
     width: 260px;
@@ -568,5 +573,36 @@ footer .menu-list {
   .pop-up p:nth-child(3) {
     width: 200px;
     margin-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  main .section-02 .img-list-container {
+    overflow-x: scroll;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+  }
+  main .section-02 .img-list {
+    gap: 60px;
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  main .section-02 {
+    margin-bottom: 330px;
+  }
+  main .section-02 .img-list {
+    gap: 20px;
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+  main .section-03 .subscribe {
+    height: 348px;
+    top: -280px;
+  }
+  main .section-03 .bg {
+    background: url(../img/img_6.png) no-repeat center / cover;
   }
 }
